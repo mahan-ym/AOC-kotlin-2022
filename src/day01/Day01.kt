@@ -1,3 +1,7 @@
+package day01
+
+import readInput
+
 fun main() {
     fun getEachElfWithMostCal(input: List<String>): ArrayList<Int> {
         var recordIndex = 0
@@ -29,7 +33,7 @@ fun main() {
     check(getElfWithMostCal(testInput).first == 4)
     check(getTopThreeElvesWithMostCalSum(testInput) == 45000)
 
-    val input = readInput("Day01")
+    val input = readInput("day01")
     val elfWithMostCal = getElfWithMostCal(input)
     println("${elfWithMostCal.first} with ${elfWithMostCal.second} calories ")
     val topThreeElvesWithMostCal = getTopThreeElvesWithMostCalSum(input)
